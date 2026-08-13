@@ -51,8 +51,8 @@ OpenRelTable::OpenRelTable()
 	relCacheEntry.recId.slot = 2;
 	
 	// set the value at RelCacheTable::relCache[ATTRCAT_RELID]
-	RelCacheTable::relCache[ATTRCAT_RELID] = (struct RelCacheEntry*)malloc(sizeof(RelCacheEntry));
-	*(RelCacheTable::relCache[ATTRCAT_RELID]) = relCacheEntry;
+	RelCacheTable::relCache[2] = (struct RelCacheEntry*)malloc(sizeof(RelCacheEntry));
+	*(RelCacheTable::relCache[2]) = relCacheEntry;
 
 
 
