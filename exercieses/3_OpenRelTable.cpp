@@ -145,7 +145,7 @@ OpenRelTable::OpenRelTable()
 	prev=nullptr;
 	head=nullptr;
 	
-	for(int i=12;i<12+ATTRCAT_NO_ATTRS;i++)
+	for(int i=12;i<12+4;i++)
 	{
 		attrCatBlock.getRecord(attrCatRecord,i);
 		
