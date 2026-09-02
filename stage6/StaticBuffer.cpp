@@ -57,6 +57,7 @@ int StaticBuffer::getFreeBuffer(int blockNum)
     
     for (;bufferIndex<BUFFER_CAPACITY;bufferIndex++)
 	{
+		if(metainfo[bufferIndex].free==true)
 		metainfo[bufferIndex].timeStamp+=1;
 		
 	}
