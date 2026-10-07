@@ -146,7 +146,7 @@ int Schema::createRel(char relName[],int nAttrs, char attrs[][ATTR_SIZE],int att
     // BlockAccess::linearSearch() with OP = EQ
     
     RelCacheTable::resetSearchIndex(RELCAT_RELID);
-    targetRelId=BlockAccess::linearSearch(RELCAT_RELID,(char*)RELCAT_RELNAME,relNameAsAttribute,EQ);
+    targetRelId=BlockAccess::linearSearch(RELCAT_RELID,(char*)RELCAT_ATTR_RELNAME,relNameAsAttribute,EQ);
 
     // if a relation with name `relName` already exists  ( linearSearch() does
     //                                                     not return {-1,-1} )
